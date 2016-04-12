@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -x
+echo "init started"
+
+env | sort
+
+# Mount some basic file systems
+/bin/mount -t devtmpfs dev /dev
+/bin/mkdir /dev/pts
+/bin/mount -t devpts devpts /dev/pts
+/bin/mount -t proc proc /proc
+/bin/mount -t tmpfs tmp /tmp
+
+echo "init completed"

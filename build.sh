@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+TOP_DIR=$(cd $(dirname $0) && pwd -P)
+
+export ALCHEMY_HOME=${TOP_DIR}/alchemy
+export ALCHEMY_WORKSPACE_DIR=${TOP_DIR}
+
+export ALCHEMY_TARGET_PRODUCT=linux
+export ALCHEMY_TARGET_PRODUCT_VARIANT=arm
+export ALCHEMY_TARGET_CONFIG_DIR=${TOP_DIR}/config/${ALCHEMY_TARGET_PRODUCT_VARIANT}
+export ALCHEMY_TARGET_OUT=${TOP_DIR}/out/${ALCHEMY_TARGET_PRODUCT_VARIANT}
+export ALCHEMY_USE_COLORS=1
+
+${ALCHEMY_HOME}/scripts/alchemake "$@"

@@ -1,0 +1,6 @@
+
+out/
+external/*/*tar*
+external/linux/*/
+toolchain/*tar*
+toolchain/*/

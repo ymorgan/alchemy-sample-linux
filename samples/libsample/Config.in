@@ -1,0 +1,11 @@
+config LIBSAMPLE_OPTION1
+	bool "Option 1"
+	default y
+	help
+		This is option 1
+
+config LIBSAMPLE_OPTION2
+	bool "Option 2"
+	default y
+	help
+		This is option 2

@@ -1,0 +1,16 @@
+# /etc/inittab
+#
+# Note: BusyBox init doesn't support runlevels.
+#
+# Format for each entry: <id>:<runlevels>:<action>:<process>
+#
+# id        == tty to run on, or empty for /dev/console
+# runlevels == ignored
+# action    == one of sysinit, respawn, askfirst, wait, and once
+# process   == program to run
+
+# Startup the system and run any rc scripts
+::sysinit:/etc/init.d/rcS
+
+# Start shell on default console
+::respawn:-/bin/sh
