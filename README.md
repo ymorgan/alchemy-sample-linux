@@ -10,7 +10,7 @@ using alchemy. It contains linux kernel, busybox, a few external libraries
 You will need the folowing host packages in order to build this sample.
 
 <pre>
-$ sudo apt-get install build-essential wget git python pkg-config libncurses5 libncurses5-dev qemu-system-arm
+$ sudo apt-get install build-essential bc wget git python pkg-config libncurses5 libncurses5-dev qemu-system-arm
 </pre>
 
 # Get toolchain/packages

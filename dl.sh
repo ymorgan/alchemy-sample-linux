@@ -4,8 +4,10 @@ set -e
 
 TOP_DIR=$(cd $(dirname $0) && pwd -P)
 
-TOOLCHAIN_URL="http://releases.linaro.org/14.09/components/toolchain/binaries"
-TOOLCHAIN_FILE="gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux.tar.bz2"
+TOOLCHAIN_URL="http://releases.linaro.org/components/toolchain/binaries/4.9-2016.02/arm-linux-gnueabihf"
+TOOLCHAIN_FILE="gcc-linaro-4.9-2016.02-x86_64_arm-linux-gnueabihf.tar.xz"
+#TOOLCHAIN_URL="http://releases.linaro.org/14.09/components/toolchain/binaries"
+#TOOLCHAIN_FILE="gcc-linaro-arm-linux-gnueabihf-4.9-2014.09_linux.tar.bz2"
 
 LINUX_URL="https://www.kernel.org/pub/linux/kernel/v3.x"
 LINUX_FILE="linux-3.18.30.tar.xz"
@@ -13,7 +15,7 @@ LINUX_FILE="linux-3.18.30.tar.xz"
 BUSYBOX_URL="http://www.busybox.net/downloads"
 BUSYBOX_FILE="busybox-1.20.2.tar.bz2"
 
-LIBPNG_URL="https://sourceforge.net/projects/libpng/files/libpng16/1.6.21"
+LIBPNG_URL="https://sourceforge.net/projects/libpng/files/libpng16/older-releases/1.6.21"
 LIBPNG_FILE="libpng-1.6.21.tar.gz"
 
 TIFF_URL="http://download.osgeo.org/libtiff"
